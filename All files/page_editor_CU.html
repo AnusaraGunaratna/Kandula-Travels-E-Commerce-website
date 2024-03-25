@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="navigation.css">
+    <title>Page Editor</title>
+    <style>
+        #pageeditor_topic{
+            background-color: rgba(255, 255, 255, 0.69);
+            font-size: 60px;
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+        .below_topic{
+            text-align:center;
+            font-size: 20px;
+        }
+        .des_topic{
+            background-color: rgba(0, 0, 0, 0.69);
+            color: white;
+            text-align: center;
+            font-size: 35px;
+        }
+        .des{
+            background-color: rgba(0, 0, 0, 0.69);
+            color: white;
+            text-align: center;
+            font-size: 20px;
+        }
+        body{
+            background: linear-gradient(to right, rgb(230, 230, 230) , rgb(11, 201, 253));
+        }
+        hr{
+            border: 5px solid black;
+        }
+        a{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu">
+        <ul>
+                <li id="logo_nav" style="padding: 4px; vertical-align: -25px;" title="Kandula Travels">
+                    <a href="Presentation_page.html">
+                        <img src="logo.png" height="80" width="80" alt="image">
+                    </a>
+                </li>
+             
+            
+                <li title="Home">
+                    <a href="webdesign_main.html">
+                        <svg class="home_nav" width="30" viewbox="0 0 500 500" >
+                            <polyline points="0,250  250,0 500,250"/>
+                            <polyline points="250,50 65,240 65,500 210,500 210,410 280,410 280,500 435,500 435,240 250,50 "/>
+                            <polyline points="110,280 180,280 180,330 110,330 110,280"/>
+                            <polyline points="370,120 370,50 410,50 410,150"/>
+                        </svg>
+                    </a>
+                </li>
+           
+            
+            
+                <li title="Comment">
+                    <a href="web_form.html">
+                        <svg class="comment_nav" width="30" viewbox="0 0 500 500">
+                            <polyline points="0,0 500,0 500,400 210,400 130,500 130,400 0,400 0,0"/>
+                            <polyline points="150,130 350,130"/>
+                            <polyline points="150,200 350,200"/>
+                            <polyline points="150,270 350,270"/>
+                        </svg >
+                    </a>
+                </li>
+            
+
+            
+                <li title="Shop">
+                    <a href="CW_Shop_page.html">
+                        <svg class="comment_nav" width="30" viewbox="0 0 500 500">
+                            <polyline points="0,0 60,30 110,375 450,375 500,150 85,150"/>
+                            <polyline points="120,375 130,450 430,450"/>
+                            <polyline points="180,490 180,500"/>
+                            <polyline points="380,490 380,500"/>
+                            <polyline points="150,200 400,200"/>
+                            <polyline points="170,240 380,240"/>
+                            <polyline points="190,280 360,280"/>      
+                        </svg>
+                    </a>
+                </li>
+           
+
+            
+                <li title="Quiz">
+                    <a href="quiz.html">
+                        <svg class="comment_nav" width="30" viewbox="0 0 500 500">
+                            <polyline points="0,0 500,0 500,500 0,500 0,0"/>
+                
+                            <polyline points="50,50 150,50 150,150 50,150 50,50"/>
+                            <polyline points="50,200 150,200 150,300 50,300 50,200"/>
+                            <polyline points="50,350 150,350 150,450 50,450 50,350"/>
+                
+                            <polyline points="190,70 450,70"/>
+                            <polyline points="190,130 390,130"/>
+                
+                            <polyline points="190,220 450,220"/>
+                            <polyline points="190,280 390,280"/>
+                
+                            <polyline points="190,370 450,370"/>
+                            <polyline points="190,430 390,430"/>
+                
+                            <polyline points="60,100 90,140 180,50" style="stroke:rgb(0, 199, 0)"/>
+                            <polyline points="60,250 90,290 180,200" style="stroke:rgb(0, 198, 0)" />
+                            <polyline points="40,350 160,450" style="stroke:red"/>            
+                            <polyline points="160,350 40,450" style="stroke:red"/>
+                        </svg>
+                    </a>
+                </li>
+            
+
+            
+                <li title="Gallery">
+                    <a href="gallery.html">
+                    <svg class="comment_nav" width="30" viewbox="0 0 500 500">
+                        <polyline points = "0,0 , 500,0 500,500 0,500 0,0" />
+                        <polyline points ="50,500 200,100 350,500"/>
+                        <polyline points ="450,500 355,200 300,360"/>
+                        <circle cx="350" cy="90" r="45"/>
+                    </svg>
+                    </a>
+                </li>
+
+            
+                <li title="Site Map">
+                    <a href="sitemap.html">
+                        <svg class="home_nav" width="30" viewbox="0 0 500 500" >
+                            <polyline points="75,0 425,0 425,150 75,150 75,0"/>
+                            <polyline points="250,150 250,350 200,350 200,500 300,500 300,350 250,350"/>
+                            <polyline points="250,250 50,250 50,350 0,350 0,500 100,500 100,350 50,350"/>
+                            <polyline points="250,250 450,250 450,350 400,350 400,500 500,500 500,350 450,350"/>
+                            <polyline points="110,50 390,50"/>
+                            <polyline points="110,80 390,80"/>
+                            <polyline points="110,110 390,110"/>
+                
+                            <polyline points="25,400 75,400"/>
+                            <polyline points="30,425 70,425"/>
+                
+                            <polyline points="225,400 275,400"/>
+                            <polyline points="230,425 270,425"/>
+                
+                            <polyline points="425,400 475,400"/>
+                            <polyline points="430,425 470,425"/>
+                        </svg>  
+                    </a>
+                </li>
+
+            
+                <li title="About US">
+                    <a href="Student.html">
+                    <svg class="about_nav" width="30" viewbox="0 0 500 500" >
+                        <circle cx="250" cy="40" r="45"/>
+                        <polyline points="180,220 250,150 250,490 330,430" style="stroke-width: 50px;"/>
+                    </svg>
+                    </a>
+                </li>
+        </ul>
+    </div>
+    
+    <div id="pageeditor_topic">Page Editor</div>
+    <hr>
+    <div class="below_topic">Name: M.W Chamuka Umesha<br>
+        Role: Student 2 <br>
+        The pages were edited by me! 
+    </div><hr><br>
+
+    <div class="des_topic">
+        Main Page
+    </div>
+
+    <div class="des"><br>
+        Created the main page using html and css.<br>
+        Also created the Navigation bar with external CSS.<br>
+        when creating the Icons in Navigation bar I used Svg with Animation. <br>
+        And Navigation bar styles are stored in an external CSS to make other webpages easily access the styles of navigation bar.<br>
+        <a href="WebDesign_coursework.html">Link to Main Page</a><br>
+    </div><br>
+
+    <div class="des_topic">
+        Comment Page
+    </div>
+    <div class="des"><br>
+        Developed the Comment Page using HTML and css<br>
+        Added JavaScript to notify the user if required questions are not filled<br>
+        also users information will be stored in our email.<br>
+        <a href="web_form.html">Link to Comment Page</a><br>
+    </div><br>
+
+    <div class="des_topic">
+        Additional content Page
+    </div>
+
+    <div class="des"><br>
+         Created  an addition page for 'Package Fun'.<br>
+         Used CSS to style the page. <br>
+         <a href="package_fun.html">Link to Package Fun Page</a>
+    </div><br>
+
+    <div class="des_topic">
+        Other Contributions to the website
+    </div>
+    <div class="des"><br>
+        created An external CSS to make all web pages font family the same.<br>
+        Created a footer<br>
+        And stored footer styles are stored in an external CSS to make other webpages easily access the styles of footer.
+    </div>
+    
+    
+    <br><br><br><br><br><br><br><br><br><br>
+
+    <footer>
+        <div style="float:right; margin-right:120px ;">
+            Contact details;<br><br>
+            E-mail : kandulatravels@gmail.com<br>
+            phone : +94 769841303<br>
+            Address : 108/D Hokandara south Hokandara
+        </div><br>
+        <div style="float:right;margin-right:170px ; ">
+            <a href="page_editor_CU.html">
+                Click here to see Student 2 Page Editor
+            </a><br><br>
+            About Us:<br><br>
+            With kandula travels you can enjoy a safe<br>
+            journey across Sri Lanka as per your interest.
+        </div>
+        <div style="float:right;margin-right:170px; ">creators of this website; <br><br>
+            Student 1- Anusara Gunarathne<br>
+            Student 2- Maddewithanage Chamuka<br>
+            Student 3-Vidunaka Vidanapathirana<br>
+            Student 4-Shanuka Dimbuwella
+        </div>
+        <div style="float:right; margin-right:170px;">
+            <img src="logo.png" height="80" width="80" alt="image"><br>
+            Kandula Travels
+        </div>
+    </footer>
+
+    
+</body>
+</html>

@@ -1,0 +1,220 @@
+/* import google font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@300&display=swap');
+
+/* created by Shanuka Imesh Dimbukkuwalage - shanuka.20221066@iit.ac.lk */
+/* to change the background color */
+:root{
+    --background: aqua;
+    --main-color:floralwhite;
+}
+/* css style for the logo */
+.logo img{
+    height: 10%;
+    width: 10%;
+    display: flex;
+    margin: auto;
+}
+/* end of css style for the logo */
+/* style for whole page */
+*
+{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    transition: all .2s linear;
+    font-family: 'Ubuntu', sans-serif;
+}
+/* changing the background color */
+body {
+    background:var(--main-color);
+    box-sizing: border-box;
+}
+/* center aligning the heading */
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+/* css style to switch color scheme of the web page */
+.color-switcher{
+    position: fixed;
+    top: 25px; 
+    right:-200px;
+    width:200px;
+    padding: 10px;
+    background: #439c89;
+    z-index: 1000;
+}
+.color-switcher.active{
+    right:0px;
+}
+.color-switcher h4{
+    color:var(black);
+    font-size: 15px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #3333;
+    padding: 0px 0;
+    text-align: center;
+}
+.color-switcher .switcher-btn i{
+    animation:rotate 1.5s linear infinite;
+}
+/* css style for the setting icon(fas fa-cog) */
+@keyframes rotate{
+    100%{
+    transform: rotate(360deg);
+    }
+}
+/* end of css style for the setting icon(fas fa-cog)*/
+.color-switcher .switcher-btn{
+    position: absolute;
+    top: 0; left: -40px;
+    color:var(--secondary);
+    background: #439c89;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.color-switcher .theme-buttons-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.color-switcher .theme-buttons-container .theme-buttons{
+    display:block;
+    height:25px;
+    width:25px;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+}
+/* end of css style to switch color scheme */
+
+/* css style to change the font size of the web page */
+.container{
+    position: relative;
+    justify-content: center;
+    width: 1200px;
+    flex-direction: column;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+.buttons{
+    display:flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.buttons .btn{
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    background: #ddd;
+    color:#fff;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.buttons .btn.work{
+    background: #444;
+}
+.buttons .btn:nth-child(2){
+    font-size: 1.5em;
+}
+.buttons .btn:nth-child(3){
+    font-size: 2em;
+}
+.content{
+    font-size: 1em;
+    color: #000000;
+}
+.content h1,
+.content p{
+    transition: 0.5s;
+}
+/* end of css style to change the font size of the web page */
+
+/* css style for the images */
+.wrapper{
+	width: 100%;
+	height: 50vh;
+}
+.wrapper .heading h2{
+	text-align: left;
+}
+.image{
+	width: 20px;
+	position: relative;
+}
+.content img{
+	width: 90%;
+    box-shadow: 10px 10px 5px;
+    border-radius: 10px;
+}
+.Pic{
+	width: 89%;
+	height: 92%;
+	top: 0;
+	left: 0;
+    box-sizing: border-box;
+    padding: 50px;
+	position: absolute;
+	background: rgba(0, 0, 0, 0.6);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	Opacity: -1;
+	transition: 0.6s;
+    border-radius: 10px;
+    font-size: x-small;
+}
+.content .Pic:hover{
+	Opacity: 1;
+    transform: scale(0.9);
+}
+.image:hover{
+    transform: scale(1.1);
+}
+.Pic h3{
+	font-size: 45px;
+	color: #ffe100;
+	margin-bottom: 15px;
+}
+.Pic p{
+	font-size: 19px;
+	color: var(--main-color);
+}
+.content .wrapper::after{
+	content: "";
+  	clear: both;
+  	display: table;
+}
+.content .image{
+	float: left;
+  	width: 33.3%;
+  	padding: 30px;
+}
+/* end of css style for the images */
+
+/* styles for back to the top button */
+#myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 50px; 
+    right: 100px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: rgb(20, 34, 228); 
+    color: rgb(247, 242, 242); 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px; 
+    font-size: 18px; 
+}
+  
+#myBtn:hover {
+    background-color: #2f947e; 
+}
+/* end of styles for back to the top button */

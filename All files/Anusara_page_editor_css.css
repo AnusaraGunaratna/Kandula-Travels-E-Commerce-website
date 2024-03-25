@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+.main_box{
+    background-color: rgb(7, 13, 57);
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+.myData{
+    font-size: larger;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+.data{
+    background-color: rgb(7, 13, 57);
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 50px;
+    padding-top: 20px;
+}
+
+pre{
+    font-family: 'Open Sans', sans-serif; 
+    font-size: larger;
+    color: white;
+}
+a{
+    margin-top: -20px;
+    padding-bottom: 20px;
+    color: rgb(155, 250, 141);
+}
+h2{
+    color: white;
+}
+
+h1{
+    color: white;
+    font-family: arial black; 
+}

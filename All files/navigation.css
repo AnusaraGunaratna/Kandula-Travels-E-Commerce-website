@@ -1,0 +1,68 @@
+ul li{
+    display: inline-block;
+    padding: 28px;
+    background-image: linear-gradient(to right, rgb(114, 114, 114) , rgb(36, 36, 36));;
+    border-radius: 18px;
+    box-shadow: 0 9px #2e2e2e, 0 0 10px rgb(0, 0, 0);
+    cursor: pointer; 
+}
+.menu{
+    position:sticky;
+    top: 20px;
+    text-align: center;
+    width: 100%;
+}
+.home_nav{
+    stroke-dasharray:1600;
+    stroke-dashoffset:-1600 ;
+    animation:draw 1.5s ease-in forwards;
+}
+.comment_nav{
+    stroke-dasharray:2000;
+    stroke-dashoffset:-2000 ;
+    animation:draw 1.5s ease-in forwards;
+}
+.about_nav{
+    stroke-dasharray:1600;
+    stroke-dashoffset:-1600 ;
+    animation:draw 0.5s ease-in forwards;
+}               
+#logo_nav img:hover{
+    animation: rotation 8s infinite ;
+    transform: rotateY(0deg);
+}
+    @keyframes rotation {
+    to {
+        transform: rotateY(360deg);
+    }                
+}
+polyline{
+    fill:none;
+    stroke:#000000;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 30px;                                
+}
+    @keyframes draw{
+    to{
+       stroke-dashoffset:0;
+    }
+}
+ul li:hover polyline{
+    stroke-dasharray:2000;
+    stroke-dashoffset:-2000 ;
+    animation:draw 1.0s ease-in forwards;
+    stroke: white;      
+}
+ul li:hover circle{
+    fill:white;
+}
+ul li:hover{
+    background-image:linear-gradient(to right, rgb(0, 0, 0) , rgb(60, 60, 60));
+}
+ul li:active{
+    background-image:linear-gradient(to right, rgb(255, 180, 41) , rgb(208, 80, 0));
+    transform: translateY(5px);
+    box-shadow: 0 5px #4f4f4f;
+}  
+

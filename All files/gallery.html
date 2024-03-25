@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<!--web page created by Shanuka Imesh Dimbukkuwalage - shanuka.20221066@iit.ac.lk web design and development group coursework-->
+<html lang = "en">
+	<head>
+		<meta charset= "UTF-8">
+		<!--link css file-->
+		<link rel = "stylesheet" href = "newStyle.css">
+		<!--import settings icons-->
+		<link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+		<title>Gallery</title>
+		<link rel = "icon" type = "image/x-icon" href ="logo.png">
+		<link rel="stylesheet" href="navigation.css">
+		<link rel="stylesheet" href="common.css">
+	</head>
+	<body>
+		<div class="menu" style="z-index: 5;" >
+			<ul>
+				<li id="logo_nav" style="padding: 4px; vertical-align: -25px;" title="Kandula Travels">
+					<a href="Presentation_page.html">
+						<img src="logo.png" height="80" width="80" alt="image">
+					</a>
+				</li>
+	
+				<li title="Home">
+					<a href="webdesign_main.html">
+						<svg class="home_nav" width="30" viewbox="0 0 500 500" >
+							<polyline points="0,250  250,0 500,250"/>
+							<polyline points="250,50 65,240 65,500 210,500 210,410 280,410 280,500 435,500 435,240 250,50 "/>
+							<polyline points="110,280 180,280 180,330 110,330 110,280"/>
+							<polyline points="370,120 370,50 410,50 410,150"/>
+						</svg>
+					</a>
+	
+				</li>
+	
+				<li title="Comment">
+					<a href="web_form.html">
+						<svg class="comment_nav" width="30" viewbox="0 0 500 500">
+							<polyline points="0,0 500,0 500,400 210,400 130,500 130,400 0,400 0,0"/>
+							<polyline points="150,130 350,130"/>
+							<polyline points="150,200 350,200"/>
+							<polyline points="150,270 350,270"/>
+						</svg >
+					</a>
+				</li>
+							   
+				<li title="Shop">
+					<a href="CW_Shop_page.html">
+						<svg class="comment_nav" width="30" viewbox="0 0 500 500">
+							<polyline points="0,0 60,30 110,375 450,375 500,150 85,150"/>
+							<polyline points="120,375 130,450 430,450"/>
+							<polyline points="180,490 180,500"/>
+							<polyline points="380,490 380,500"/>
+							<polyline points="150,200 400,200"/>
+							<polyline points="170,240 380,240"/>
+							<polyline points="190,280 360,280"/>      
+						</svg>
+					</a>
+				</li>
+			
+	
+		   
+				<li title="Quiz">
+					<a href="quiz.html">
+						<svg class="comment_nav" width="30" viewbox="0 0 500 500">
+							<polyline points="0,0 500,0 500,500 0,500 0,0"/>
+				
+							<polyline points="50,50 150,50 150,150 50,150 50,50"/>
+							<polyline points="50,200 150,200 150,300 50,300 50,200"/>
+							<polyline points="50,350 150,350 150,450 50,450 50,350"/>
+				
+							<polyline points="190,70 450,70"/>
+							<polyline points="190,130 390,130"/>
+				
+							<polyline points="190,220 450,220"/>
+							<polyline points="190,280 390,280"/>
+				
+							<polyline points="190,370 450,370"/>
+							<polyline points="190,430 390,430"/>
+				
+							<polyline points="60,100 90,140 180,50" style="stroke:rgb(0, 199, 0)"/>
+							<polyline points="60,250 90,290 180,200" style="stroke:rgb(0, 198, 0)" />
+							<polyline points="40,350 160,450" style="stroke:red"/>            
+							<polyline points="160,350 40,450" style="stroke:red"/>
+						</svg>
+					</a>
+				</li>
+			
+	
+			
+				<li title="Gallery">
+					<a href="gallery.html">
+						<svg class="comment_nav" width="30" viewbox="0 0 500 500">
+							<polyline points = "0,0 , 500,0 500,500 0,500 0,0" />
+							<polyline points ="50,500 200,100 350,500"/>
+							<polyline points ="450,500 355,200 300,360"/>
+							<circle cx="350" cy="90" r="45"/>
+						</svg>
+					</a>
+				</li>
+	
+				<li title="Site Map">
+					<a href="sitemap.html">
+						<svg class="home_nav" width="30" viewbox="0 0 500 500" >
+							<polyline points="75,0 425,0 425,150 75,150 75,0"/>
+							<polyline points="250,150 250,350 200,350 200,500 300,500 300,350 250,350"/>
+							<polyline points="250,250 50,250 50,350 0,350 0,500 100,500 100,350 50,350"/>
+							<polyline points="250,250 450,250 450,350 400,350 400,500 500,500 500,350 450,350"/>
+							<polyline points="110,50 390,50"/>
+							<polyline points="110,80 390,80"/>
+							<polyline points="110,110 390,110"/>
+				
+							<polyline points="25,400 75,400"/>
+							<polyline points="30,425 70,425"/>
+				
+							<polyline points="225,400 275,400"/>
+							<polyline points="230,425 270,425"/>
+				
+							<polyline points="425,400 475,400"/>
+							<polyline points="430,425 470,425"/>
+						</svg>  
+					</a>
+				</li>
+	
+				<li title="About US">
+					<a href="Student.html">
+						<svg class="about_nav" width="30" viewbox="0 0 500 500" >
+							<circle cx="250" cy="40" r="45"/>
+							<polyline points="180,220 250,150 250,490 330,430" style="stroke-width: 50px;"/>
+						</svg>
+					</a>
+				</li>
+		   
+			</ul>
+		</div>
+		<!--  -->
+		<div class = "color-switcher">
+			<div class = "switcher-btn">
+				<!--settings icon-->
+				<i class = "fas fa-cog"></i>
+			</div>
+			<h4>Change color</h4>
+			<!--theme color buttons to change the color of the website-->
+			<div class = "theme-buttons-container">
+				<span class = "theme-buttons" data-color = "#41d37e" style ="background: #41d37e;"></span>
+				<span class = "theme-buttons" data-color = "#ccfa4f" style ="background: #ccfa4f;"></span>
+				<span class = "theme-buttons" data-color = "floralwhite" style ="background: floralwhite;"></span>
+				<span class = "theme-buttons" data-color = "#4ff0e8" style ="background: #4ff0e8;"></span>
+				<span class = "theme-buttons" data-color = "#ffc312" style ="background: #ffc312;"></span>
+			</div>
+			<!--end of theme color buttons-->
+		</div>
+		<header>
+		<div class = "container">
+			<!--changing the font size of the webpage-->
+			<div class = "buttons">
+				<span class="btn work" onclick="document.getElementById('text').style.fontSize = '1em'">A</span>
+				<span class="btn" onclick="document.getElementById('text').style.fontSize = '1.25em'">A</span>
+				<span class="btn" onclick="document.getElementById('text').style.fontSize = '1.75em'">A</span>
+			</div>
+			<!--end of the font size buttons-->
+		</div>
+		</header>
+			<!--web page content-->
+			<div class = "logo">
+				<img src = "logo.png" alt="logo">
+			</div>
+			<div class = "content" id = "text">
+				<br>
+				<h1><u>Kandula Travels</u></h1>
+				<br>
+				<hr>
+				<br>
+				<h2><u>Sri lankan heritage.</u></h2>
+				<br>
+				<br>
+				<div class = "wrapper">
+					<div class = "image">
+						<img src = "gangaramya.jpg" alt="gangaramya">
+						<div class = "Pic">
+							<h3>Gangaramaya Temple</h3>
+							<p>Gangaramaya Temple a mix of modern architecture and cultural essence</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "museum.jpg" alt="museum">
+						<div class = "Pic">
+							<h3>National Museum</h3>
+							<p>The National Museum of Natural History is a museum that covers the natural heritage of Sri Lanka.</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "gallefort.jpg" alt="gallefort">
+						<div class = "Pic">
+							<h3>Galle Fort</h3>
+							<p>Built by Portuguese 1588. Located at the extreme southwest corner of the island, in the southwest coast of Sri Lanka</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "thisamaharam.jpg" alt="thisamaharama">
+						<div class = "Pic">
+							<h3>Tissamaharama Temple</h3>
+							<p>The Tissamaharama Raja Maha Vihara is an ancient Buddhist temple in Tissamaharama, Southern Province of Sri Lanka.</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "Kataragama.jpg" alt="Kataragama">
+						<div class = "Pic">
+							<h3>Kataragama</h3>
+							<p>Kataragama is a pilgrimage town sacred to Hindu, Buddhist and indigenous Vedda people of Sri Lanka.</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "maligawila.jpg" alt="maligawila">
+						<div class = "Pic">
+							<h3>Maligawila Buddha Statue</h3>
+							<p>The statue is carved during the 7th century by a prince named Aggabodhi.</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "Muhudu-Maha-Viharaya.jpg" alt="Muhudu Maha Viharaya">
+						<div class = "Pic">
+							<h3>Muhudu Maha Viharaya</h3>
+							<p>Was built over 2000 years ago by King Kavan Tissa of Ruhuna.</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "koneshwaram.jpg" alt="koneshwaram">
+						<div class = "Pic">
+							<h3>Koneswaram</h3>
+							<p>Koneswaram Temple of Trincomalee, a Hindu religious pilgrimage centre in Eastern Province, Sri Lanka.</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "fortfederick.jpg" alt="fortfederick">
+						<div class = "Pic">
+							<h3>Fort Frederick</h3>
+							<p>Fort Fredrick also known as Trincomalee Fort or Fort of Triquillimale, is a fort built by the Portuguese at Trincomalee, Eastern Province, Sri Lanka</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "lankapatuna.jpg" alt="lankapatuna">
+						<div class = "Pic">
+							<h3>Lankapatuna Samudragiri Viharaya</h3>
+							<p>A Buddhist temple situated in the Trincomalee District.</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "DambakolaPatuna.jpg" alt="DambakolaPatuna">
+						<div class = "Pic">
+							<h3>Dambakola Patuna</h3>
+							<p>The Port of Jambukola or Dambakola Patuna is an ancient port to the north of Jaffna.</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "nallurkovill.jpg" alt="nallurkovilla">
+						<div class = "Pic">
+							<h3>Nallur Kandaswamy temple</h3>
+							<p>A hindu temple, located in Nallur, Northern Province, Sri Lanka.</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "nagaviharaya.jpg" alt="nagaviharaya">
+						<div class = "Pic">
+							<h3>Sri Naga Viharaya</h3>
+							<p>Very calm and quiet monastry with many monks and you get a sense of calmness and relaxation.</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "jaffnafort.jpg" alt="jaffnafort">
+						<div class = "Pic">
+							<h3>Jaffna Fort</h3>
+							<p>Jaffna Fort is a fort built by the Portuguese at Jaffna, Sri Lanka in 1618 under Phillippe de Oliveira following the Portuguese invasion of Jaffna.</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "nagadeepa.jpg" alt = "nagadeepa">
+						<div class = "Pic">
+							<h3>Nagadeepaya</h3>
+							<p>Nagadeepa Purana Vihara is an ancient Buddhist temple situated in Jaffna district of Northern Province, Sri Lanka.</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "ruwnawaliseya.jpg" alt="ruwnawaliseya">
+						<div class = "Pic">
+							<h3>Ruwanweli Maha Seya</h3>
+							<p>The Ruwanweli Maha Seya, also known as the Mahathupa, is a stupa in Anuradhapura, Sri Lanka</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "Sri-Maha-Bodhi.jpg" alt="Sri Maha Bodhi">
+						<div class = "Pic">
+							<h3>Jaya Sri Maha Bodhi</h3>
+							<p>The Jaya Sri Maha Bodhi is a sacred Bo tree, that stands in the Mahamewna Gardens in Anuradhapura, Sri Lanka.</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "mirisawatiya.JPG" alt="mirisawatiya">
+						<div class = "Pic">
+							<h3>Mirisavetiya Stupa</h3>
+							<p>The Mirisaweti Stupa is a memorial building, a stupa, situated in the ancient city of Anuradhapura, Sri Lanka.</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "Jethawanaramaya.jpg" alt="Jethawanaramaya">
+						<div class = "Pic">
+							<h3>Jetavanaramaya</h3>
+							<p>Jetavanaramaya is a stupa, or Buddhist reliquary monument, located in the ruins of Jetavana monastery in the UNESCO world heritage city of Anuradhapura, Sri Lanka.</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "thuparamaya.jpg" alt="thuparamaya">
+						<div class = "Pic">
+							<h3>Thuparamaya</h3>
+							<p>Thuparamaya is the earliest documented Buddhist temple in Sri Lanka.</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "abhayagiriya.jpg" alt="abhayagiriya">
+						<div class = "Pic">
+							<h3>Abhayagiri Vihara</h3>
+							<p>Abhayagiri Vihāra was a major monastery site of Mahayana, Theravada and Vajrayana Buddhism that was situated in Anuradhapura, Sri Lanka.</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "samadhistatue.jpg" alt="samadhistatue">
+						<div class = "Pic">
+							<h3>Samadhi Buddha Statue</h3>
+							<p>The Samadhi Buddha is a famous statue situated at Mahamevnāwa Park in Anuradhapura, Sri Lanka.</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "Sigiriya.jpg" alt="Sigiriya">
+						<div class = "Pic">
+							<h3>Sigiriya </h3>
+							<p>Sigiriya or Sinhagiri is an ancient rock fortress located in the northern Matale District near the town of Dambulla in the Central Province.</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "GalViharaya.jpg" alt="GalViharaya">
+						<div class = "Pic">
+							<h3>Gal Vihara</h3>
+							<p>The Gal Vihara, is a rock temple of the Buddha situated in the ancient city Polonnaruwa.</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "thivankapilimage.jpg" alt="thivankapilimage">
+						<div class = "Pic">
+							<h3>Thivanka Pilimage</h3>
+							<p>Thivanka Pilimage was built by King Parakramabahu (1153-1186), situated in Polonnaruwa.</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "vatadageya.jpg" alt="vatadageya">
+						<div class = "Pic">
+							<h3>Vatadage</h3>
+							<p>Vatadages were built around small stupas for their protection, which often enshrined a relic or were built on hallowed ground.</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "somawathiya.jpg" alt="somawathiya">
+						<div class = "Pic">
+							<h3>Somawathiya Chaitya</h3>
+							<p>The Somawathiya Chaitya is a Buddhist Stupa situated in the ancient city of Polonnaruwa, Sri Lanka.</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "dimbulagala.jpg" alt="dimbulagala">
+						<div class = "Pic">
+							<h3>Dimbulagala</h3>
+							<p>Dimbulagala also known as Gunner's Quoin or Gunner's Rock during the British colonial period, is a rock formation in the Polonnaruwa District of Sri Lanka.</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "mahiyanganaya.jpg" alt="mahiyanganaya">
+						<div class = "Pic">
+							<h3>Mahiyanganaya Viharaya</h3>
+							<p>Mahiyanganaya is a town situated close to the Mahaweli River in Badulla District, Uva Province of Sri Lanka.</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "Sacred_Tooth_Temple.jpg" alt="Sacred Tooth Temple">
+						<div class = "Pic">
+							<h3>Sri Dalada Maligawa</h3>
+							<p>Sri Dalada Maligawa or the Temple of the Sacred Tooth Relic is a Buddhist temple in the city of Kandy, Sri Lanka</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "nelligala.jpg" alt="nelligala">
+						<div class = "Pic">
+							<h3>Nelligala </h3>
+							<p>Nelligala International Buddhist Center is a Buddhist temple situated in Muruthalawa village in the Kandy district</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "kotmale.jpg" alt="kotmale">
+						<div class = "Pic">
+							<h3>Kotmale Rajamaha Viharaya</h3>
+							<p>Situated in Kotmale about 3 miles from Kotmale Oya.</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "nildiyapokuna.jpg" alt="nildiyapokuna">
+						<div class = "Pic">
+							<h3>Nil Diya Pokuna</h3>
+							<p>Nildiya Pokuna, located at a distance of 13.3 km from the Ella, is a great place to have an adventurous experience.</p>
+						</div>
+					</div>
+				</div>
+				<br>
+				<hr>
+				<br>
+				<h2><u>Fun Locations</u></h2>
+				<br>
+				<div class = "wrapper">
+					<br>
+					<div class = "image">
+						<img src = "lotusTower.jpg" alt="lotusTower">
+						<div class = "Pic">
+							<h3>Lotus Tower</h3>
+							<p>Lotus Tower is a 350 m tall tower, located in Colombo, Sri Lanka.</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "gallefort.jpg" alt="gallefort">
+						<div class = "Pic">
+							<h3>Galle Fort</h3>
+							<p>Built by Portuguese 1588. Located at the extreme southwest corner of the island, in the southwest coast of Sri Lanka</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "unawatuna.jpg" alt="unawatuna">
+						<div class = "Pic">
+							<h3>Unawatuna Beach</h3>
+							<p>Beach with golden sand & palm trees offering activities like snorkeling & scuba diving.</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "rumassala.jpg" alt="rumassala">
+						<div class = "Pic">
+							<h3>Rumassala Beach</h3>
+							<p>Rumassala South Beach is situated along with the Rumassala hill in Unawatuna.</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "arugambay.jpg" alt="arugambay">
+						<div class = "Pic">
+							<h3>Arugam Bay Beach</h3>
+							<p>Arugam Bay known locally as "Arugam Kudah", is situated on the Indian Ocean in the dry zone of Sri Lanka's southeast coast.</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "pasikudah.jpg" alt="pasikudah">
+						<div class = "Pic">
+							<h3>Pasikuda Beach</h3>
+							<p> situated in Eastern seaboard of Sri Lanka between Kalkuda and the Indian Ocean.</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "nilaveli.jpg" alt="nilaveli">
+						<div class = "Pic">
+							<h3>Nilaveli Beach</h3>
+							<p>Scenic sandy beach featuring clear water with coral & marine life.</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "pigeonisland.jpg" alt="pigeonisland">
+						<div class = "Pic">
+							<h3>Pigeon Island National Park</h3>
+							<p>Pigeon Island National Park is one of the two marine national parks of Sri Lanka.</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "jaffnafort.jpg" alt="jaffnafort">
+						<div class = "Pic">
+							<h3>Jaffna Fort</h3>
+							<p>Jaffna Fort is a fort built by the Portuguese at Jaffna, Sri Lanka in 1618 under Phillippe de Oliveira following the Portuguese invasion of Jaffna.</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "Sigiriya.jpg" alt="Sigiriya">
+						<div class = "Pic">
+							<h3>Sigiriya </h3>
+							<p>Sigiriya or Sinhagiri is an ancient rock fortress located in the northern Matale District near the town of Dambulla in the Central Province.</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "peacockhill.jpg" alt="peacockhill">
+						<div class = "Pic">
+							<h3>Peacock Hill</h3>
+							<p>Peacock Hill, An excellent vantage point that brings views across the mist encrusted hills of Pussellawa, Ramboda Falls, Parrot Rock.</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "ambuluwawa.jpg" alt="Ambuluwawa">
+						<div class = "Pic">
+							<h3>Ambuluwawa Tower</h3>
+							<p>Located in the suburbs of Gampola Town in Sri Lanka.</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "sembuwatta.jpg" alt="sembuwatta">
+						<div class = "Pic">
+							<h3>Sembuwatta Lake</h3>
+							<p> Sembuwatta Lake is a man-made lake created from natural spring water. </p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "nuwaraeliyapark.jpg" alt="nuwaraeliyapark">
+						<div class = "Pic">
+							<h3>Victoria Park, Nuwara Eliya</h3>
+							<p>Victoria Park is a well-maintained park situated in the heart of Nuwara Eliya.</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "hortonplains.jpg" alt="hortonplains">
+						<div class = "Pic">
+							<h3>Horton Plains National Park</h3>
+							<p>Horton Plains National Park is a national park in the central highlands of Sri Lanka that was designated in 1988.</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "bomburuella.JPG" alt="bomburuella">
+						<div class = "Pic">
+							<h3>Bomburu Ella Waterfall</h3>
+							<p>Located near the border of Nuwara Eliya and Badulla districts, Bomburu Ella is the widest waterfall in Sri Lanka.</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "madulsima.jpg" alt="madulsima">
+						<div class = "Pic">
+							<h3>Madulsima</h3>
+							<p>The most popular Madulsima Mini World's End sword top for camping above the clouds. It is a village in the Uva Province of Sri Lanka.</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "dunhidaalla.jpg" alt="dunhidaalla">
+						<div class = "Pic">
+							<h3>Dunhinda Falls</h3>
+							<p>Victoria Park is a well-maintained park situated in the heart of Nuwara Eliya.</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "9archbridge.jpg" alt="9archbridge">
+						<div class = "Pic">
+							<h3>Nine Arch Bridge</h3>
+							<p>The Nine Arches Bridge also called the Bridge in the Sky, is a viaduct bridge in Sri Lanka.</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "nildiyapokuna.jpg" alt="nildiyapokuna">
+						<div class = "Pic">
+							<h3>Nil Diya Pokuna</h3>
+							<p>Nildiya Pokuna, located at a distance of 13.3 km from the Ella, is a great place to have an adventurous experience.</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "ravanafalls.jpg" alt="ravanafalls">
+						<div class = "Pic">
+							<h3>Ravana Falls</h3>
+							<p>Ravana Falls is a popular sightseeing attraction in Sri Lanka. It currently ranks as one of the widest falls in the country.</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "adishambungalow.jpg" alt="adishambungalow">
+						<div class = "Pic">
+							<h3>Adisham Hall</h3>
+							<p>The Adisham Bungalow was once the country house of Sir Thomas Lester Villiers, but today it houses the Adisham Monastery of the St. Benedict.</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "bambarakandawaterfall.jpg" alt="bambarakandawaterfall">
+						<div class = "Pic">
+							<h3>Bambarakanda Falls</h3>
+							<p>Bambarakanda Falls is the tallest waterfall in Sri Lanka.</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "bopathella.jpg" alt="bopathella">
+						<div class = "Pic">
+							<h3>Bopath Ella Falls</h3>
+							<p>Bopath Ella is a waterfall situated in the Ratnapura District of Sri Lanka.</p>
+						</div>
+					</div>
+				</div>
+				<hr>
+				<br>
+				<h2><u>Sri Lankan Wild Life.</u></h2>
+				<br>
+				<div class = "wrapper">
+					<br>
+					<div class = "image">
+						<img src = "ridiyagama.jpg" alt="Ridiyagama">
+						<div class = "Pic">
+							<h3>Ridiyagama Safari Park</h3>
+							<p>Ridiyagama Safari Park is 500 acre safari park, zoo in Ridiyagama area of Hambantota District, Sri Lanka.</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "yala.jpg" alt="yala forrest">
+						<div class = "Pic">
+							<h3>Yala National Park</h3>
+							<p>The park covers 979 square kilometres (378 sq mi) and is located about 300 kilometres (190 mi) from Colombo.</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "Rajagala.jpg" alt="Rajagala">
+						<div class = "Pic">
+							<h3>Rajagala</h3>
+							<p>Rajagala, commonly Rassaagala or Rajagalathenna, is a rugged and heavily forested mountain situated in Ampara.</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "wilpattu.jpg" alt="Wilpattu">
+						<div class = "Pic">
+							<h3>Wilpattu National Park </h3>
+							<p>Located on the northwest coast lowland dry zone of Sri Lanka.</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "chundikulamBirdSanctuary.jpg" alt="chundikulamBirdSanctuary">
+						<div class = "Pic">
+							<h3>Chundikulam National Park</h3>
+							<p>Chundikulam national park is a beautiful landscape with shallow wetland areas.</p>
+						</div>
+					</div>
+					<div class = "image">
+						<img src = "SingharajaRainForest.jpg" alt="SingharajaRainForest">
+						<div class = "Pic">
+							<h3>Sinharaja Forest Reserve</h3>
+							<p>Sinharaja is a Rain Forest which is located in south west lowland.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
+			<footer>
+				<div style="float:left; margin-left:50px;">
+					<img src="logo.png" height="80" width="80" alt="logo"><br>
+					Kandula Travels
+				</div>
+				<div style="float:right; margin-right:70px ;">
+					Contact details;<br><br>
+					E-mail : kandulatravels@gmail.com<br>
+					phone : 0769841303<br>
+					Address : 108/D Hokandara south Hokandara
+				</div><br>
+				<div style="float:right;margin-right:90px ; ">
+					<a href="editor4.html">
+						Click here to see Student 4 Page Editor
+					</a><br><br>
+					About;<br><br>
+					With Kandula Travels you can enjoy a safe journey across Sri Lanka as per your
+                    interest.  
+				</div>
+				<div style="float:left;margin-left:100px; ">creators of this website; <br><br>
+					Student 1- Anusara Gunarathne<br>
+					Student 2- Maddewithanage Chamuka<br>
+					Student 3-Vidunaka Vidanapathirana<br>
+					Student 4-Shanuka Dimbukkuwalage
+				</div>
+			</footer>
+		<!--end web page content-->
+		
+		<!--javascript file-->
+		<script src = "script.js"></script>
+	</body>
+</html>

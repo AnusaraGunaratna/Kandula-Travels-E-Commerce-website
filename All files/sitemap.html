@@ -1,0 +1,292 @@
+<!--web page created by Shanuka Imesh Dimbukkuwalage - shanuka.20221066@iit.ac.lk web design and development group coursework-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitemap</title>
+    <link rel = "icon" type = "image/x-icon" href ="logo.png">
+    <link rel = "stylesheet" href = "navigation.css">
+    <link rel="stylesheet" href="common.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@300&display=swap');
+        /* css style for circles in site map */
+        .circle_1{
+            display: flex;
+            margin: auto;
+            margin-top: -2%;
+        }
+        .circle_6 text{
+            fill: rgb(255, 145, 0);
+        }
+        svg:hover circle{
+            fill: yellowgreen;
+            stroke: rgb(28, 138, 6);
+        }
+        svg:hover text{
+            fill: yellowgreen;
+        }
+        svg:active circle{
+            fill: rgb(255, 145, 0);
+            stroke: rgb(231, 255, 16);
+        }
+        svg:active text{
+            fill: rgb(255, 145, 0);
+        }
+        .content{
+            display:flex;
+        }
+        .circle_2,
+        .circle_3,
+        .circle_4,
+        .circle_5,
+        .circle_6,
+        .circle_7,
+        .circle_8{
+            display: flex;
+        }
+        /* end of css style for circles in site map */
+
+        /* css style for heading */
+        h1{
+            color:white;
+            text-align: center;
+            margin-left: 1%;
+            margin-top: 12%;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        /* end of css style for heading */
+
+        /* css style for images */
+        .circle_2,
+        .circle_3,
+        .circle_4,
+        .circle_5,
+        .circle_6,
+        .circle_7,
+        .circle_8 img{
+            height: 100%;
+            width: 14.5%;
+        }
+        /* end of css style for images */
+
+        /* background image */
+        body{
+            background-image: url("background.jpg");
+        }
+        /* end of background image */
+    </style>
+</head>
+<body>
+    <!-- navigation bar of the web page -->
+    <div class="menu" style="position: fixed;">
+        <ul>
+            <li id="logo_nav" style="padding: 4px; vertical-align: -25px;" title="Kandula Travels">
+                <a href="Presentation_page.html">
+                    <img src="logo.png" height="80" width="80" alt="image">
+                </a>
+            </li>
+
+            <li title="Home">
+                <a href="webdesign_main.html">
+                    <svg class="home_nav" width="30" viewbox="0 0 500 500" >
+                        <polyline points="0,250  250,0 500,250"/>
+                        <polyline points="250,50 65,240 65,500 210,500 210,410 280,410 280,500 435,500 435,240 250,50 "/>
+                        <polyline points="110,280 180,280 180,330 110,330 110,280"/>
+                        <polyline points="370,120 370,50 410,50 410,150"/>
+                    </svg>
+                </a>
+
+            </li>
+
+            <li title="Comment">
+                <a href="web_form.html">
+                    <svg class="comment_nav" width="30" viewbox="0 0 500 500">
+                        <polyline points="0,0 500,0 500,400 210,400 130,500 130,400 0,400 0,0"/>
+                        <polyline points="150,130 350,130"/>
+                        <polyline points="150,200 350,200"/>
+                        <polyline points="150,270 350,270"/>
+                    </svg >
+                </a>
+            </li>
+                           
+            <li title="Shop">
+                <a href="CW_Shop_page.html">
+                    <svg class="comment_nav" width="30" viewbox="0 0 500 500">
+                        <polyline points="0,0 60,30 110,375 450,375 500,150 85,150"/>
+                        <polyline points="120,375 130,450 430,450"/>
+                        <polyline points="180,490 180,500"/>
+                        <polyline points="380,490 380,500"/>
+                        <polyline points="150,200 400,200"/>
+                        <polyline points="170,240 380,240"/>
+                        <polyline points="190,280 360,280"/>      
+                    </svg>
+                </a>
+            </li>
+        
+
+       
+            <li title="Quiz">
+                <a href="quiz.html">
+                    <svg class="comment_nav" width="30" viewbox="0 0 500 500">
+                        <polyline points="0,0 500,0 500,500 0,500 0,0"/>
+            
+                        <polyline points="50,50 150,50 150,150 50,150 50,50"/>
+                        <polyline points="50,200 150,200 150,300 50,300 50,200"/>
+                        <polyline points="50,350 150,350 150,450 50,450 50,350"/>
+            
+                        <polyline points="190,70 450,70"/>
+                        <polyline points="190,130 390,130"/>
+            
+                        <polyline points="190,220 450,220"/>
+                        <polyline points="190,280 390,280"/>
+            
+                        <polyline points="190,370 450,370"/>
+                        <polyline points="190,430 390,430"/>
+            
+                        <polyline points="60,100 90,140 180,50" style="stroke:rgb(0, 199, 0)"/>
+                        <polyline points="60,250 90,290 180,200" style="stroke:rgb(0, 198, 0)" />
+                        <polyline points="40,350 160,450" style="stroke:red"/>            
+                        <polyline points="160,350 40,450" style="stroke:red"/>
+                    </svg>
+                </a>
+            </li>
+        
+
+        
+            <li title="Gallery">
+                <a href="gallery.html">
+                    <svg class="comment_nav" width="30" viewbox="0 0 500 500">
+                        <polyline points = "0,0 , 500,0 500,500 0,500 0,0" />
+                        <polyline points ="50,500 200,100 350,500"/>
+                        <polyline points ="450,500 355,200 300,360"/>
+                        <circle cx="350" cy="90" r="45"/>
+                    </svg>
+                </a>
+            </li>
+
+            <li title="Site Map">
+                <a href="sitemap.html">
+                    <svg class="home_nav" width="30" viewbox="0 0 500 500" >
+                        <polyline points="75,0 425,0 425,150 75,150 75,0"/>
+                        <polyline points="250,150 250,350 200,350 200,500 300,500 300,350 250,350"/>
+                        <polyline points="250,250 50,250 50,350 0,350 0,500 100,500 100,350 50,350"/>
+                        <polyline points="250,250 450,250 450,350 400,350 400,500 500,500 500,350 450,350"/>
+                        <polyline points="110,50 390,50"/>
+                        <polyline points="110,80 390,80"/>
+                        <polyline points="110,110 390,110"/>
+            
+                        <polyline points="25,400 75,400"/>
+                        <polyline points="30,425 70,425"/>
+            
+                        <polyline points="225,400 275,400"/>
+                        <polyline points="230,425 270,425"/>
+            
+                        <polyline points="425,400 475,400"/>
+                        <polyline points="430,425 470,425"/>
+                    </svg>  
+                </a>
+            </li>
+
+            <li title="About US">
+                <a href="Student.html">
+                    <svg class="about_nav" width="30" viewbox="0 0 500 500" >
+                        <circle cx="250" cy="40" r="45"/>
+                        <polyline points="180,220 250,150 250,490 330,430" style="stroke-width: 50px;"/>
+                    </svg>
+                </a>
+            </li>
+       
+        </ul>
+    </div>
+    <!-- end of the navigation bar of the web page -->
+    <h1>Sitemap.</h1>
+    <!-- svg for home icon -->
+    <svg class= "circle_1" height = "150" width = "150">
+        <circle cx = "75" cy = "80" r="55" stroke="black" stroke-width="5" fill="#29CF9D" />
+        <a href = "webdesign_main.html"><image href = "house.png" x = "-25" y = "20" height="95" width="200" /></a>
+        <text x = "50" y = "150" fill = "white">Home</text>
+    </svg>
+    <!-- end of svg for home icon -->
+
+    <!-- svg for lines -->
+    <svg height = "150" width = "2000">
+        <line x1="1600" y1="100" x2="100" y2="100" style="stroke:rgb(255, 255, 255);stroke-width:4" />
+        <line x1="850" y1="10" x2="850" y2="300" style="stroke:rgb(255, 255, 255);stroke-width:4" />
+        <line x1="102" y1="200" x2="102" y2="100" style="stroke:rgb(255, 255, 255);stroke-width:4" />
+        <line x1="330" y1="200" x2="330" y2="100" style="stroke:rgb(255, 255, 255);stroke-width:4" />
+        <line x1="600" y1="200" x2="600" y2="100" style="stroke:rgb(255, 255, 255);stroke-width:4" />
+        <line x1="1090" y1="200" x2="1090" y2="100" style="stroke:rgb(255, 255, 255);stroke-width:4" />
+        <line x1="1350" y1="200" x2="1350" y2="100" style="stroke:rgb(255, 255, 255);stroke-width:4" />
+        <line x1="1598" y1="300" x2="1598" y2="100" style="stroke:rgb(255, 255, 255);stroke-width:4" />
+    </svg>
+    <!-- end of svg for lines -->
+
+    <!-- svg for circles and images -->
+    <div class = "content">
+        <svg class= "circle_2" height = "100" width = "100">
+            <circle cx = "100" cy = "80" r="55" stroke="black" stroke-width="5" fill="#29CF9D" />
+            <a href = "package_data.html"><image href = "youtube.png" y = "35" height = "100" width = "200"/></a>
+            <text x = "60" y = "147" fill = "white">Content Page</text>
+        </svg>
+        <svg class= "circle_3" width = 100>
+            <circle cx = "90" cy = "80" r="55" stroke="black" stroke-width="5" fill="#29CF9D"/>
+            <a href = "CW_Shop_page.html"><image href = "shopping-cart.png" x = "-15" y = "36" height = "90" width = "200"/></a>
+            <text x = "60" y = "147" fill = "white">Buy Products</text>
+        </svg>
+        <svg class= "circle_4" width = 100>
+            <circle cx = "100" cy = "80" r="55" stroke="black" stroke-width="5" fill="#29CF9D"/>
+            <a href = "web_form.html"><image href = "contract.png" x = "9" y = "36" height = "85" width = "200"/></a>
+            <text x = "60" y = "147" fill = "white">Query Form</text>
+        </svg>
+        <svg class= "circle_5" height = "50" width = "50">
+            <circle cx = "105" cy = "80" r="55" stroke="black" stroke-width="5" fill="#29CF9D"/>
+            <a href = "quiz.html"><image href = "questionnaire.png" x = "13" y = "30" height = "90" width = "200"/></a>
+            <text x = "80" y = "147" fill = "white">Quiz</text>
+        </svg>
+        <svg class= "circle_6" height = "100" width = "100">
+            <circle cx = "100" cy = "80" r="55" stroke="rgb(231, 255, 16)" stroke-width="5" fill = "rgb(255, 145, 0)"/>
+            <a href = "sitemap.html"><image href = "navigation.png" x = "0" y = "35" height="85" width="200"/></a>
+            <text x = "75" y = "147" fill = "white">Sitemap</text>
+        </svg>
+        <svg class= "circle_7" width = 100>
+            <circle cx = "100" cy = "80" r="55" stroke="black" stroke-width="5" fill="#29CF9D"/>
+            <a href = "Student.html"><image href = "profile.png" x = "0" y = "30" height="95" width="200"/></a>
+            <text class="active" x = "70" y = "147" fill = "white">Student Details</text>
+        </svg>
+        <svg class= "circle_8" width = 200>
+            <circle cx = "100" cy = "80" r="55" stroke="black" stroke-width="5" fill="#29CF9D"/>
+            <text x = "70" y = "147" fill = "white">Gallery</text>
+            <a href = "gallery.html"><image href = "picture.png" x = "4" y = "35" height="90" width="200"/></a>
+        </svg>
+    </div>
+    <footer>
+        <div style="float:left; margin-left:50px;">
+            <img src="logo.png" height="80" width="80" alt="logo"><br>
+            Kandula Travels
+        </div>
+        <div style="float:right; margin-right:70px ;">
+            Contact details;<br><br>
+            E-mail : kandulatravels@gmail.com<br>
+            phone : 0769841303<br>
+            Address : 108/D Hokandara south Hokandara
+        </div><br>
+        <div style="float:right;margin-right:90px ; ">
+            <a href="editor4.html">
+                Click here to see Student 4 Page Editor
+            </a><br><br>
+            About;<br><br>
+            With Kandula Travels you can enjoy a safe journey across Sri Lanka as per your
+            interest.  
+        </div>
+        <div style="float:left;margin-left:100px; ">creators of this website; <br><br>
+            Student 1- Anusara Gunarathne<br>
+            Student 2- Maddewithanage Chamuka<br>
+            Student 3-Vidunaka Vidanapathirana<br>
+            Student 4-Shanuka Dimbukkuwalage
+        </div>
+    </footer>
+    <!-- end of svg for circles and images -->
+</body>
+</html>

@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+body{
+    animation-name: main;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes main{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.main_title{
+    font-size: 50px;
+    font-family: Arial Black;
+    color: rgb(230, 163, 38);
+    margin-left: 1%; 
+    margin-top: -2%;
+    font-style: italic;
+  }
+
+  .title_box{
+    width:100%; 
+    height: 280px; 
+    filter: blur(5); 
+    position: fixed; 
+    background: linear-gradient( orange 40%, transparent); 
+    margin-top: -7.5%; 
+    margin-left: -0.5%; 
+    z-index: 2;
+ }
+
+.packages_c{
+    display: flex;
+    position: relative;
+    margin-top: 120px;
+    margin-right: 20px;
+}
+
+.text1_c{
+    color:white; 
+    padding-left:5px; 
+    font-family: Helvetica;
+    font-size: 50px;
+}
+
+.text2_c{
+    color: black;
+    font-size: 30px;
+    padding-left:5px; 
+    font-family: Fantasy;
+}
+
+/* card 1 */
+
+.detail1_c{
+    position: absolute;
+    width:100%;
+    bottom: -60px;
+    z-index: 1;
+    transition: 0.5s;
+
+}
+
+
+.card1_c{
+    position: relative;
+    width: 420px;
+    height: 450px;
+    border-radius: 20px;
+    overflow: hidden;
+    flex-wrap: wrap;
+    margin-left: 50px;   
+}
+
+.card1_c:hover{
+    box-shadow: 0 5px 35px #57C84D;
+    transition: 0.8s;
+}
+
+.pck1_c{
+    position:relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.pck1_c::before{
+    content:'';
+    position: absolute;
+    bottom: -230px;
+    width:100%;
+    height: 300px;
+    background: #2EB62C;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.card1_c:hover .pck1_c::before{
+    bottom:0px;
+    height: 400px;
+    background: linear-gradient(0deg, #2EB62C 40%, transparent);
+}
+
+.card1_c:hover img{
+    filter: blur(4px);
+}
+
+.card1_c:hover .detail1_c{
+    transition: 0.8s;
+    bottom: 100px;
+}
+
+/* card 2 */
+
+.card2_c{
+    position: relative;
+    width: 420px;
+    height: 450px;
+    border-radius: 20px;
+    overflow: hidden;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    
+}
+
+.card2_c:hover{
+    box-shadow: 0 5px 35px #f1ede9;
+    transition: 0.8s;
+}
+
+.detail2_c{
+    position: absolute;
+    width:100%;
+    bottom: -60px;
+    z-index: 1;
+    transition: 0.5s;
+
+}
+
+.pck2_c{
+    position:relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.pck2_c::before{
+    content:'';
+    position: absolute;
+    bottom: -230px;
+    width:100%;
+    height: 300px;
+    background: #95896f;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.card2_c:hover .pck2_c::before{
+    bottom:-30px;
+    height: 400px;
+    background: linear-gradient(0deg, #7f786a 50%, transparent);
+}
+
+.card2_c:hover img{
+    filter: blur(4px);
+}
+
+.card2_c:hover .detail2_c{
+    transition: 0.8s;
+    bottom: 100px;
+}
+
+
+/* card 3 */
+
+.card3_c{
+    position: relative;
+    width: 420px;
+    height: 450px;
+    border-radius: 20px;
+    overflow: hidden;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    
+}
+
+.card3_c:hover{
+    box-shadow: 0 5px 35px #faf605;
+    transition: 0.8s;
+}
+
+.detail3_c{
+    position: absolute;
+    width:100%;
+    bottom: -165px;
+    z-index: 1;
+    transition: 0.5s;
+
+}
+
+.pck3_c{
+    position:relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.pck3_c::before{
+    content:'';
+    position: absolute;
+    bottom: 165px;
+    width:100%;
+    height: 300px;
+    background: #bdae10;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.card3_c:hover .pck3_c::before{
+    bottom:350px;
+    height: 400px;
+    background: linear-gradient(0deg, #bdae10 40%, transparent);
+}
+
+.card3_c:hover img{
+    filter: blur(4px);
+}
+
+.card3_c:hover .detail3_c{
+    transition: 0.8s;
+    bottom: 30px;
+}
+
+
+/* card 4 */
+
+.card4_c{
+    position: relative;
+    width: 420px;
+    height: 450px;
+    border-radius: 20px;
+    overflow: hidden;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    
+}
+
+.card4_c:hover{
+    box-shadow: 0 5px 35px #3fb4ce;
+    transition: 0.8s;
+}
+
+.detail4_c{
+    position: absolute;
+    width:100%;
+    bottom: -135px;
+    z-index: 1;
+    transition: 0.5s;
+
+}
+
+.pck4_c{
+    position:relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.pck4_c::before{
+    content:'';
+    position: absolute;
+    bottom: -230px;
+    width:100%;
+    height: 300px;
+    background: #3f76ce;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.card4_c:hover .pck4_c::before{
+    bottom:0px;
+    height: 400px;
+    background: linear-gradient(0deg, #3f76ce 40%, transparent);
+}
+
+.card4_c:hover img{
+    filter: blur(4px);
+}
+
+.card4_c:hover .detail4_c{
+    transition: 0.8s;
+    bottom: 40px;
+}
+
+.box {
+	text-align: center;
+}
+.btn_book_c {
+	font-size: 20px;
+    font-weight: 80;
+    font-family: fantasy;
+	padding: 15px 35px;
+	color: #181818;
+	text-decoration: none;
+	cursor: pointer;
+	transition: all 0.3s ease-out;
+	background: #f2f2f2;
+	border-radius: 20px;
+    position: absolute;
+    margin-left: 200px;
+    margin-top: -40px;
+}
+
+.footer { 
+    font-family:'Ubuntu', sans-serif ;
+    background-color: rgb(64, 57, 57);
+    color: white;
+    position: relative;
+    margin: 0;
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 3px;
+    opacity: 0.5;
+  }
+
+footer { 
+    bottom:0;
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    height: fit-content;
+    margin-top: 160px;
+    z-index: 2;
+    margin-left: -10px;
+    margin-bottom: -80px;
+}
+
+.PgEditor{
+    padding-top: 85px;
+    text-align: center;
+    font-size: 25px;
+    opacity: 0.7;
+    font-family:arial black ;
+    z-index: 11;
+}
+.pointer{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    margin-left: -45px;
+    margin-top: 2px;
+}
+
+.PgEditor:hover{
+    text-decoration: underline;
+    color: white;
+}
+

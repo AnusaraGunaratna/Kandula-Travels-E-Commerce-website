@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Package-Kandula Travels</title>
+    <link rel="icon" href="logo.png" type="image/icon">
+    <link rel="stylesheet" href="Fun_css.css">
+    <link rel="stylesheet" href="navigation.css">
+    <script>
+        var drop_charge ;
+        var var1;
+        var var2;
+
+        function S_loc(){
+            var opt = document.getElementById("S_loc_input");
+            var opt_out = opt.options[opt.selectedIndex].text;
+           switch(opt_out){
+
+            case "Choose":
+                document.getElementById("txt").value=0;
+                document.getElementById("txt2").value="";
+                document.getElementById("txt3").value="";
+                document.getElementById("txt4").value=0;
+                drop_charge = document.getElementById("txt4").value;
+                break;
+
+            case "Colombo":
+                document.getElementById("txt").value=0;
+                document.getElementById("txt2").value="Lotus Tower";
+                document.getElementById("txt3").value="Bopath Ella";
+                document.getElementById("txt4").value= 22;
+                drop_charge = document.getElementById("txt4").value;
+                break;
+
+            case "Kandy":
+                document.getElementById("txt").value=12;
+                document.getElementById("txt2").value="Peacock Hill";
+                document.getElementById("txt3").value="Jaffna Fort";
+                document.getElementById("txt4").value= 84;
+                drop_charge = document.getElementById("txt4").value;
+                break;
+
+            case "Jaffna":
+                document.getElementById("txt").value=0;
+                document.getElementById("txt2").value="Jaffna Fort";
+                document.getElementById("txt3").value="Pasikudah beach";
+                document.getElementById("txt4").value= 90;
+                drop_charge = document.getElementById("txt4").value;
+                break;
+
+            case "Matara":
+                document.getElementById("txt").value=65;
+                document.getElementById("txt2").value="Arugam bay";
+                document.getElementById("txt3").value="Galle Fort";
+                document.getElementById("txt4").value=15;
+                drop_charge = document.getElementById("txt4").value;
+                break;
+
+            case "Anuradhapura":
+                document.getElementById("txt").value=20;
+                document.getElementById("txt2").value="Sigiriya";
+                document.getElementById("txt3").value="Nilawale beach";
+                document.getElementById("txt4").value=32;
+                drop_charge = document.getElementById("txt4").value;
+                break;
+
+            case "Ampara":
+                document.getElementById("txt").value=20;
+                document.getElementById("txt2").value="Arugam Bay";
+                document.getElementById("txt3").value="Pigeon island";
+                document.getElementById("txt4").value=60;
+                drop_charge = document.getElementById("txt4").value;
+                break;
+
+            case "Trincomalee":
+                document.getElementById("txt").value=4;
+                document.getElementById("txt2").value="Nilawale beach";
+                document.getElementById("txt3").value="Arugam Bay";
+                document.getElementById("txt4").value=65;
+                drop_charge = document.getElementById("txt4").value;
+                break;
+           }
+        }
+
+        function S_loc_back(y_n){
+            if(y_n=="yes"){
+                document.getElementById("txt4").value=drop_charge;
+            }
+            else if (y_n=="no" ){
+                document.getElementById("txt4").value=0;
+            }
+            return;
+        }
+
+        function total(){
+            var1 = document.getElementById("txt").value;
+            var2 = document.getElementById("txt4").value;
+            if (isNaN(parseInt(var1) + parseInt(var2))) {
+                alert("Select a pickup location.");
+            }else{
+                document.getElementById("txt5").value= parseInt(var1) + parseInt(var2) + 320;
+            }
+        }
+
+        function payment_done(){
+            var name = document.getElementById("c_name").value;
+            var num = document.getElementById("c_num").value;
+            var date = document.getElementById("c_date").value;
+            var cvv = document.getElementById("c_cvv").value;
+
+            if (!(num && name && date && cvv)){
+            }
+            else{
+               alert("Payment done.");
+            }
+        }
+
+        function final_pay(pay){
+            if (pay==1){
+                document.getElementById("txt6").value= parseInt(var1) + parseInt(var2) + 320; 
+                if (isNaN(parseInt(var1) + parseInt(var2))){
+                document.getElementById("txt6").value= 0; 
+                 }
+
+            }else if ( pay==0){
+                document.getElementById("txt6").value= 100;
+            }
+        }
+
+       
+
+
+    </script>
+</head>
+<body style="background-image: url('f1.jpg');">
+    <img src="logo.png" alt="#" style="width:100px; height: 100px; position: absolute; z-index: 3;">
+    <div style="position: absolute; z-index: 3;">
+        <pre class="main_title">
+            Kandula
+                    Travels
+        </pre></div>
+
+    <div class="menu" style="z-index: 5;">
+        <ul>         
+            <li id="logo_nav" style="padding: 4px; vertical-align: -25px;" title="Kandula Travels">
+                <a href="Presentation_page.html">
+                    <img src="logo.png" height="80" width="80" alt="image">
+                </a>
+            </li>
+
+            <li title="Home">
+                <a href="webdesign_main.html">
+                    <svg class="home_nav" width="30" viewbox="0 0 500 500" >
+                        <polyline points="0,250  250,0 500,250"/>
+                        <polyline points="250,50 65,240 65,500 210,500 210,410 280,410 280,500 435,500 435,240 250,50 "/>
+                        <polyline points="110,280 180,280 180,330 110,330 110,280"/>
+                        <polyline points="370,120 370,50 410,50 410,150"/>
+                    </svg>
+                </a>
+
+            </li>
+
+            <li title="Comment">
+                <a href="web_form.html">
+                    <svg class="comment_nav" width="30" viewbox="0 0 500 500">
+                        <polyline points="0,0 500,0 500,400 210,400 130,500 130,400 0,400 0,0"/>
+                        <polyline points="150,130 350,130"/>
+                        <polyline points="150,200 350,200"/>
+                        <polyline points="150,270 350,270"/>
+                    </svg >
+                </a>
+            </li>
+                            
+            <li title="Shop">
+                <a href="CW_Shop_page.html">
+                    <svg class="comment_nav" width="30" viewbox="0 0 500 500">
+                        <polyline points="0,0 60,30 110,375 450,375 500,150 85,150"/>
+                        <polyline points="120,375 130,450 430,450"/>
+                        <polyline points="180,490 180,500"/>
+                        <polyline points="380,490 380,500"/>
+                        <polyline points="150,200 400,200"/>
+                        <polyline points="170,240 380,240"/>
+                        <polyline points="190,280 360,280"/>      
+                    </svg>
+                </a>
+            </li>
+        
+
+        
+            <li title="Quiz">
+                <a href="quiz.html">
+                    <svg class="comment_nav" width="30" viewbox="0 0 500 500">
+                        <polyline points="0,0 500,0 500,500 0,500 0,0"/>
+            
+                        <polyline points="50,50 150,50 150,150 50,150 50,50"/>
+                        <polyline points="50,200 150,200 150,300 50,300 50,200"/>
+                        <polyline points="50,350 150,350 150,450 50,450 50,350"/>
+            
+                        <polyline points="190,70 450,70"/>
+                        <polyline points="190,130 390,130"/>
+            
+                        <polyline points="190,220 450,220"/>
+                        <polyline points="190,280 390,280"/>
+            
+                        <polyline points="190,370 450,370"/>
+                        <polyline points="190,430 390,430"/>
+            
+                        <polyline points="60,100 90,140 180,50" style="stroke:rgb(0, 199, 0)"/>
+                        <polyline points="60,250 90,290 180,200" style="stroke:rgb(0, 198, 0)" />
+                        <polyline points="40,350 160,450" style="stroke:red"/>            
+                        <polyline points="160,350 40,450" style="stroke:red"/>
+                    </svg>
+                </a>
+            </li>
+        
+
+        
+            <li title="Gallery">
+                <a href="gallery.html">
+                    <svg class="comment_nav" width="30" viewbox="0 0 500 500">
+                        <polyline points = "0,0 , 500,0 500,500 0,500 0,0" />
+                        <polyline points ="50,500 200,100 350,500"/>
+                        <polyline points ="450,500 355,200 300,360"/>
+                        <circle cx="350" cy="90" r="45"/>
+                    </svg>
+                </a>
+            </li>
+
+            <li title="Site Map">
+                <a href="sitemap.html">
+                    <svg class="home_nav" width="30" viewbox="0 0 500 500" >
+                        <polyline points="75,0 425,0 425,150 75,150 75,0"/>
+                        <polyline points="250,150 250,350 200,350 200,500 300,500 300,350 250,350"/>
+                        <polyline points="250,250 50,250 50,350 0,350 0,500 100,500 100,350 50,350"/>
+                        <polyline points="250,250 450,250 450,350 400,350 400,500 500,500 500,350 450,350"/>
+                        <polyline points="110,50 390,50"/>
+                        <polyline points="110,80 390,80"/>
+                        <polyline points="110,110 390,110"/>
+            
+                        <polyline points="25,400 75,400"/>
+                        <polyline points="30,425 70,425"/>
+            
+                        <polyline points="225,400 275,400"/>
+                        <polyline points="230,425 270,425"/>
+            
+                        <polyline points="425,400 475,400"/>
+                        <polyline points="430,425 470,425"/>
+                    </svg>  
+                </a>
+            </li>
+
+            <li title="About US">
+                <a href="Student.html">
+                    <svg class="about_nav" width="30" viewbox="0 0 500 500" >
+                        <circle cx="250" cy="40" r="45"/>
+                        <polyline points="180,220 250,150 250,490 330,430" style="stroke-width: 50px;"/>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="title_box">
+    </div>
+
+    <div class="overlay">
+        <div class="mainTopic">
+            <h1 style="color: rgb(255, 255, 255); margin-top: 10px; font-family: Arial, Helvetica, sans-serif; text-align: center;" >&nbsp;Fun Package</h1>
+            <a class="close" href="CW_Shop_page.html" >Back</a>
+            </div>
+		<div class="wrapper">
+			<div class="content" >
+				<div class="container" >
+					<form>
+                        <br><br><br>
+                        <div style="overflow: auto; white-space: nowrap; width:90%; background-color: transparent; text-align: center; margin-left: 5%;">
+                            <div style="display: inline-block; margin-left: 10px;">
+                            <div class="places"><h3 style="margin-left: 10px;">Lotus Tower</h3></div>
+                            <div class="places"><h3 style="margin-left: 10px;">Galle fort</h3></div>
+                            <div class="places"><h3 style="margin-left: 10px;">Unawatuna beach</h3></div>
+                            <div class="places"><h3 style="margin-left: 10px;">Roomassala Mountain</h3></div>
+                            <div class="places"><h3 style="margin-left: 10px;">Arugam bay</h3></div>
+                            <div class="places"><h3 style="margin-left: 10px;">Pasikudah beach</h3></div>
+                            <div class="places"><h3 style="margin-left: 10px;"> Nilawale beach</h3></div>
+                            <div class="places"><h3 style="margin-left: 10px;"> Pigeon island</h3></div>
+                            <div class="places"><h3 style="margin-left: 10px;">Jaffna fort</h3></div>
+                            <div class="places"><h3 style="margin-left: 10px;">Elephant pass</h3></div>
+                            <div class="places"><h3 style="margin-left: 10px;">Sigiriya</h3></div>
+                            <div class="places"><h3 style="margin-left: 10px;">Ambuluwaava</h3></div>
+                            <div class="places"><h3 style="margin-left: 10px;">Sembuwatta lake</h3></div>
+                            <div class="places"><h3 style="margin-left: 10px;">Nuwara Eliya park</h3></div>
+                            <div class="places"><h3 style="margin-left: 10px;">Horton plains</h3></div>
+                            <div class="places"><h3 style="margin-left: 10px;">Bomburu ella</h3></div>
+                            <div class="places"><h3 style="margin-left: 10px;">Madulsima</h3></div>
+                            <div class="places"><h3 style="margin-left: 10px;"> Nine Arches Bridge</h3></div>
+                            <div class="places"><h3 style="margin-left: 10px;">Rawana ella</h3></div>
+                            <div class="places"><h3 style="margin-left: 10px;">Nil diya pokuna</h3></div>
+                            <div class="places"><h3 style="margin-left: 10px;">Adisham Hall</h3></div>
+                            <div class="places"><h3 style="margin-left: 10px;">Lipton Seat </h3></div>
+                            <div class="places"><h3 style="margin-left: 10px;">Bambara Hill</h3></div>
+                            <div class="places"><h3 style="margin-left: 10px;">Bopath Ella</h3></div>
+                            </div>
+                        </div><br>  
+
+                        <br>
+                        <div style="margin-left: 20px;">
+                            <div class="sub_topics">
+                                <span>Details</span>
+                            </div><br>
+                            <div style="justify-content: center; width:100%; ">
+                                <span style="margin-right: 18px;">Name</span><br>
+                                <input type="text" class="form__input_c" placeholder="Full name" required="">
+                                <br><br>
+                                <span style="margin-right: 5px;">E-mail</span><br>
+                                <input type="email" class="form__input_c" placeholder="E-mail" required="">
+                                <br><br>
+                                <span style="margin-right: 5px;">Phone number</span><br>
+                                <input type="tel" class="form__input_c" placeholder="Contact number" required="">
+
+                            </div>
+                            <br>
+
+                            <span>Start Date :</span>
+                            <input type="date" name="datePicker" class="form__input_c" style="width:150px; height: 50px" required>
+                            
+                            <span style="font-size: 20px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; ">  &nbsp; ( The journey will be 8 days in total. )</span>
+                            <br><br>
+
+                        </div>
+                        
+                        <div style="margin-left: 20px;">
+                            <div class="sub_topics">
+                                <span>Pickup and Drop-down</span>
+                            </div><br>
+                            <span>Select a pickup Location</span><br>
+                            <select id="S_loc_input" onchange="S_loc(); total();" class="form__input_c" required="" >
+                                <option value="">Choose</option>
+                                <option>Colombo</option>
+                                <option>Kandy</option>
+                                <option>Jaffna</option>
+                                <option>Matara</option>
+                                <option>Anuradhapura</option>
+                                <option>Ampara</option>
+                                <option>Trincomalee</option>
+                            </select>
+                
+                            <br><br>
+                            <div class="location">
+                                <span style="color: rgb(9, 10, 9); position: relative;" >Start location: </span>
+                                <input type="text" id="txt2" class="location_in" disabled>
+                            </div>
+                            <br>
+                            <div class="location">
+                                <span style="color: rgb(9, 10, 9); position: relative;" >End location: </span>
+                                <input type="text" id="txt3"  class="location_in" disabled>
+                            </div>
+                            <br>
+                            <span>Do you wish to come back to your pickup location after the trip ?</span><br><br>
+                            <button id="yes_click" onclick="S_loc_back('yes'); total();" class="button_1">Yes</button>
+                            <button id="no_click" onclick="S_loc_back('no'); total();" class="button_1" >No</button><br>
+                            <br><br>
+                        </div>
+
+                        
+                        <div style="margin-left: 20px;">
+                            <div class="sub_topics">
+                                <span>Total : $</span>
+                                <input type="text" id="txt5" class="disabled_input" style="margin-top: 5px;" disabled>
+                            </div>
+                            <br>
+                            <span>Package price: $320</span>
+                            <br>
+                            <span>Charge for pickup : $</span>
+                            <input type="text" id="txt" placeholder="0" class="disabled_input" disabled>
+                            <br>
+                            <span>Charge for drop-down : $</span>
+                            <input type="text" id="txt4" placeholder="0" class="disabled_input" disabled>
+
+                        </div>
+                        <br><br>
+                        <div style="margin-left: 20px;">
+
+                            <div class="sub_topics">
+                                <span>Hotel Information</span>
+                            </div>
+                            
+                            <div >
+                                <p style="font-size: 15px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; "> 
+                                    -> Hotels can be booked according to your preference, 5km from the day's end location to the hotel will be offered free, if exceeded charges will be applied.
+                                </p>
+                                <textarea placeholder="Enter the hotel locations with any additional information.." style="height: 70px; width: 98%;  font-size: 15px;" class="form__input_c" required=""></textarea>
+                            </div>
+
+                        </div>
+                            <br><br>
+
+                            
+                        <div style="margin-left: 20px;">
+                            <div class="sub_topics">
+                                <span>Payment</span>
+                            </div><br>
+                            <span>Do you want to pay the full amount or an advance ?</span><br><br>
+                            <a class="button_1" href="#divTwo" onclick="final_pay(1)" >Full Payment </a>
+                            <a class="button_1" href="#divTwo" onclick="final_pay(0)" >Advance</a>
+                        </div><br><br>
+
+					    </form>
+                    </div>
+				</div>
+			</div>
+		</div>
+
+        <!--  -->
+
+        <div class="card_overlay" id="divTwo">
+            <div class="card_wrapper">
+                <a class="close_card" href="#">&times;</a>
+                    <form>
+                        <div class="pay_main">
+                        <div class="card_payment">
+                            <div class="radio_inputs">
+                                <label>
+                                    <input class="radio_input" type="radio" checked="" name="engine">
+                                        <span class="radio_tile">
+                                            <span class="radio-icon">
+                                                <img src="visa.png" alt="#" style="width:50px; height:50px;">
+                                            </span>
+                                        </span>
+                                </label>
+                                <label>
+                                    <input class="radio_input" type="radio" name="engine">
+                                    <span class="radio_tile">
+                                        <span class="radio_icon">
+                                            <img src="master.png" alt="#" style="width:50px; height:50px;">
+                                        </span>
+                                    </span>
+                                </label>
+                            </div>
+                                <div class="credit-card-info">
+                                <div class="input_container">
+                                    <label  class="input_label">Card holder full name</label>
+                                    <input  class="input_field" type="text" placeholder="Enter your full name" autocomplete="off" id="c_name" name="c_name" required>
+                                </div>
+                                <div class="input_container">
+                                    <label  class="input_label">Card Number</label>
+                                    <input  class="input_field" type="number" placeholder="0000 0000 0000 0000" autocomplete="off" id="c_num" name="c_num" required>
+                                </div>
+                                <div class="input_container">
+                                    <label class="input_label">Expiry Date / CVV</label>
+                                    <div class="split">
+                                    <input class="input_field" type="text" placeholder="MM/YY" style="width:320px" autocomplete="off" id="c_date" required>
+                                    <input class="input_field" type="number"  placeholder="CVV" style="width: 140px" autocomplete="off" id="c_cvv" required>
+                                </div>
+                                </div>
+                                </div>
+
+                                <div class="input_container">
+                                    <span style="margin-top: 8%;">Amount : $</span>
+                                    <input type="text" class="disabled_input" id="txt6"  placeholder="0" style="width: 200px; margin-top: -28px; margin-left: 115px; color:#333333;"  disabled>
+                                </div>
+                                
+                                <button class="purchase_btn" onclick="payment_done()">Proceed</button>
+                        </div>
+                        </div>
+    
+                    </form>
+            </div>
+        </div>
+     
+ 
+</body>
+</html>

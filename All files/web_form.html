@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Comments</title>
+  <link rel="icon" type="image/x-icon" href="logo.png">
+  <link rel="stylesheet" href="navigation.css" >
+  <link rel="stylesheet" href="common.css">
+  <style>
+    .rating{
+      display : flex;
+    }
+
+    .rating input{
+      position : absolute;
+      left     : -100vw;
+    }
+
+    .rating label{
+      width      : 48px;
+      height     : 48px;
+      padding    : 48px 0 0;
+      overflow   : hidden;
+      background : url('stars.svg') no-repeat top left;
+    }
+    .rating:not(:hover) input:indeterminate + label,
+    .rating:not(:hover) input:checked ~ input + label,
+    .rating input:hover ~ input + label{
+      background-position : -48px 0;
+    }
+
+    .rating:not(:hover) input:focus-visible + label{
+      background-position : -96px 0;
+    }
+  </style>
+  <style>
+     @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap');
+
+    #topic{
+      font-family:'Edu NSW ACT Foundation', cursive ;
+      font-size: 70px;
+      padding-top: 80px;
+      padding-left: 20px;
+    }
+    .box_sizing{
+      box-sizing: border-box;
+      border: 15px;
+      box-shadow: 0 0 20px #000000, 0 0 20px #000000;
+      border-radius: 20px;
+      padding-left: 20px;
+      font-size: 25px;
+      font-family:'Edu NSW ACT Foundation', cursive ;
+      font-weight:bold;
+    }
+    .form_text{
+      background-color: #000000bb;
+      color: rgb(255, 255, 255);
+      width: max-content;
+      font-family:'Edu NSW ACT Foundation', cursive ;
+
+    }
+    #textarea_style{
+      background-image:url(form_img_2.jpg); 
+      background-size: 1600px auto; 
+      background-position-y: -300px; 
+    }
+    .submit_reset{
+      padding:15px;
+      border-radius: 20px;
+      box-shadow: 0 6px 3px #000000, 0 0 10px rgb(0, 0, 0);
+    }
+
+    .submit_reset:hover{
+      box-shadow: 0 2px 3px #000000, 0 0 10px rgb(0, 0, 0);
+      transform: translateY(5px);
+      filter:contrast(300%);
+    }
+  </style>
+  
+  <script>
+    function validateForm() {
+        let x = document.forms["form_name"]["rating"].value;
+        if (x == "") {
+          alert("Rating is mandatory!") 
+            return false;
+        }
+        else{
+          alert("thank you! ")
+        }
+    }
+  
+</script>
+</head>
+<body style="background: linear-gradient(to right, rgb(230, 230, 230) , rgb(83, 83, 83));">
+  
+  <div class="menu">
+    <ul>
+        
+          <li id="logo_nav" style="padding: 4px; vertical-align: -25px;" title="Kandula Travels">
+            <a href="#topic">
+              <img src="logo.png" height="80" width="80" alt="image">
+            </a>
+          </li>
+        
+            <li title="Home">
+              <a href="webdesign_main.html">
+                <svg class="home_nav" width="30" viewbox="0 0 500 500" >
+                    <polyline points="0,250  250,0 500,250"/>
+                    <polyline points="250,50 65,240 65,500 210,500 210,410 280,410 280,500 435,500 435,240 250,50 "/>
+                    <polyline points="110,280 180,280 180,330 110,330 110,280"/>
+                    <polyline points="370,120 370,50 410,50 410,150"/>
+                </svg>
+              </a>
+            </li>  
+        
+            <li title="Comment">
+              <a href="web_form.html">
+                <svg class="comment_nav" width="30" viewbox="0 0 500 500">
+                    <polyline points="0,0 500,0 500,400 210,400 130,500 130,400 0,400 0,0"/>
+                    <polyline points="150,130 350,130"/>
+                    <polyline points="150,200 350,200"/>
+                    <polyline points="150,270 350,270"/>
+                </svg >
+              </a>
+            </li>
+        
+            <li title="Shop">
+              <a href="CW_Shop_page.html">
+                <svg class="comment_nav" width="30" viewbox="0 0 500 500">
+                    <polyline points="0,0 60,30 110,375 450,375 500,150 85,150"/>
+                    <polyline points="120,375 130,450 430,450"/>
+                    <polyline points="180,490 180,500"/>
+                    <polyline points="380,490 380,500"/>
+                    <polyline points="150,200 400,200"/>
+                    <polyline points="170,240 380,240"/>
+                    <polyline points="190,280 360,280"/>      
+                </svg>
+              </a>
+            </li>
+                
+            <li title="Quiz">
+              <a href="quiz.html">
+                <svg class="comment_nav" width="30" viewbox="0 0 500 500">
+                    <polyline points="0,0 500,0 500,500 0,500 0,0"/>
+        
+                    <polyline points="50,50 150,50 150,150 50,150 50,50"/>
+                    <polyline points="50,200 150,200 150,300 50,300 50,200"/>
+                    <polyline points="50,350 150,350 150,450 50,450 50,350"/>
+
+                    <polyline points="190,70 450,70"/>
+                    <polyline points="190,130 390,130"/>
+        
+                    <polyline points="190,220 450,220"/>
+                    <polyline points="190,280 390,280"/>
+        
+                    <polyline points="190,370 450,370"/>
+                    <polyline points="190,430 390,430"/>
+        
+                    <polyline points="60,100 90,140 180,50" style="stroke:rgb(0, 199, 0)"/>
+                    <polyline points="60,250 90,290 180,200" style="stroke:rgb(0, 198, 0)" />
+                    <polyline points="40,350 160,450" style="stroke:red"/>            
+                    <polyline points="160,350 40,450" style="stroke:red"/>
+                </svg>
+              </a>
+            </li>
+        
+            <li title="Gallery">
+              <a href="gallery.html">
+                <svg class="comment_nav" width="30" viewbox="0 0 500 500">
+                    <polyline points = "0,0 , 500,0 500,500 0,500 0,0" />
+                    <polyline points ="50,500 200,100 350,500"/>
+                    <polyline points ="450,500 355,200 300,360"/>
+                    <circle cx="350" cy="90" r="45"/>
+                </svg>
+              </a>
+            </li>
+        
+            <li title="Site Map">
+              <a href="sitemap.html">
+                <svg class="home_nav" width="30" viewbox="0 0 500 500" >
+                    <polyline points="75,0 425,0 425,150 75,150 75,0"/>
+                    <polyline points="250,150 250,350 200,350 200,500 300,500 300,350 250,350"/>
+                    <polyline points="250,250 50,250 50,350 0,350 0,500 100,500 100,350 50,350"/>
+                    <polyline points="250,250 450,250 450,350 400,350 400,500 500,500 500,350 450,350"/>
+                    <polyline points="110,50 390,50"/>
+                    <polyline points="110,80 390,80"/>
+                    <polyline points="110,110 390,110"/>
+        
+                    <polyline points="25,400 75,400"/>
+                    <polyline points="30,425 70,425"/>
+        
+                    <polyline points="225,400 275,400"/>
+                    <polyline points="230,425 270,425"/>
+        
+                    <polyline points="425,400 475,400"/>
+                    <polyline points="430,425 470,425"/>
+                </svg>  
+              </a>
+            </li>
+
+            <li title="About US">
+              <a href="Student.html">
+                <svg class="about_nav" width="30" viewbox="0 0 500 500" >
+                    <circle cx="250" cy="40" r="45"/>
+                    <polyline points="180,220 250,150 250,490 330,430" style="stroke-width: 50px;"/>
+                </svg>
+              </a>
+            </li>
+    </ul>
+</div>
+
+  <div id="topic">How did we do?</div>
+  <br><br><br><br>
+  <form action="mailto:kandulatravels@gmail.com" name="form_name"  method="post" enctype="text/plain" onsubmit="return validateForm()"> 
+    <div class="box_sizing" style="background-image:url(form_img_1.jpg); background-size: 1500px auto; background-position-y:-160px ;"><br>
+      <div class="form_text">How satisfied were you with our website today? Choose from star 1 to star 10, Where one star is extremely dissatisfied and ten stars are extremely satisfied.</div><br><br><br>
+
+      <div class="rating" >
+        <input id="rating1" type="radio" name="rating" value="1">
+        <label for="rating1"></label>
+        <input id="rating2" type="radio" name="rating" value="2">
+        <label for="rating2"></label>
+        <input id="rating3" type="radio" name="rating" value="3">
+        <label for="rating3"></label>
+        <input id="rating4" type="radio" name="rating" value="4">
+        <label for="rating4"></label>
+        <input id="rating5" type="radio" name="rating" value="5">
+        <label for="rating5"></label>
+        <input id="rating6" type="radio" name="rating" value="6">
+        <label for="rating6"></label>
+        <input id="rating7" type="radio" name="rating" value="7">
+        <label for="rating7"></label>
+        <input id="rating8" type="radio" name="rating" value="8">
+        <label for="rating8"></label>
+        <input id="rating9" type="radio" name="rating" value="9">
+        <label for="rating9"></label>
+        <input id="rating10" type="radio" name="rating" value="10">
+        <label for="rating10"></label>
+    </div>
+    <br>
+  </div>
+  <br><br><br>
+  <div class="box_sizing" id="textarea_style"><br>
+    <div class="form_text" >Please could you tell us the reasons for giving this rating?</div><br><br><br>
+    <textarea  name="rating_reasons" placeholder="Write your reasons here..." style="height:100px; width: 98%; background-color:rgba(69, 69, 69, 0.688); color: white;font-size: 20px;"></textarea><br><br>
+  </div>
+  <br><br><br>
+  <div class="box_sizing" style="background-image:url(form_img_3.jpg); background-size: 1500px auto; background-position-y: -300px;">
+    <br>
+    <div class="form_text">How did you want to complete this task today? (optional) </div><br><br><br>
+    <select name="prefered" style="background:linear-gradient(to bottom, rgb(230, 230, 230) , rgb(255, 115, 0)) ;font-size: 20px; font-family:'Edu NSW ACT Foundation', cursive ;">
+      <option value="No_answer">Select your option</option>
+      <option value="phone">Phone</option>
+      <option value="website">Website</option>
+      <option value="webchat">Webchat</option>
+      <option value="social_media">Social media</option>
+      <option value="e_mail">E mail</option>
+    </select> <br><br>
+
+  </div>
+  <br><br><br>
+  <div class="box_sizing" style="background-image:url(form_img_4.jpg);background-size: 1200px auto; background-position-y: -200px;">
+    <br>
+    <div class="form_text">If you had to complete this task again, How would you prefer to do it? (optional)</div><br><br><br>
+    <select name="prefered_next" style="background:linear-gradient(to bottom, rgb(230, 230, 230) , rgb(255, 115, 0)) ;font-size: 20px; font-family:'Edu NSW ACT Foundation', cursive ;">
+      <option value="No_answer">Select your option</option>
+      <option value="phone">Phone</option>
+      <option value="website">Website</option>
+      <option value="webchat">Webchat</option>
+      <option value="social_media">Social media</option>
+      <option value="e_mail">E mail</option>
+    </select> <br><br>
+  </div><br><br><br>
+  
+  <div >
+    <input type="submit" class="submit_reset" style="background:  linear-gradient(to right, rgb(255, 93, 93) , rgb(197, 0, 0));">&nbsp;&nbsp;&nbsp;
+    <input type="reset" class="submit_reset" style="background:  linear-gradient(to right, rgb(174, 255, 0) , rgb(0, 141, 14));">
+  </div><br><br>
+  </form><br><br><br>
+  <footer>
+    <div style="float:right; margin-right:120px ;">
+        Contact details;<br><br>
+        E-mail : kandulatravels@gmail.com<br>
+        phone : +94 769841303<br>
+        Address : 108/D Hokandara south Hokandara
+    </div><br>
+    <div style="float:right;margin-right:170px ; ">
+        <a href="page_editor_CU.html">
+            Click here to see Student 2 Page Editor
+        </a><br><br>
+        About Us:<br><br>
+        With kandula travels you can enjoy a safe<br>
+        journey across Sri Lanka as per your interest.
+    </div>
+    <div style="float:right;margin-right:170px; ">creators of this website; <br><br>
+        Student 1- Anusara Gunarathne<br>
+        Student 2- Maddewithanage Chamuka<br>
+        Student 3-Vidunaka Vidanapathirana<br>
+        Student 4-Shanuka Dimbuwella
+    </div>
+    <div style="float:right; margin-right:170px;">
+        <img src="logo.png" height="80" width="80" alt="image"><br>
+        Kandula Travels
+    </div>
+</footer>
+</body>
+</html>
